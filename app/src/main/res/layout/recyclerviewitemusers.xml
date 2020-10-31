@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:contentPadding="15dp"
+    android:elevation="5dp"
+    android:id="@+id/recyclerUserParent"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6"
+
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/avatar_circle"
+            android:elevation="5dp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usrName"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-black"
+                android:text="User Name"
+                android:textColorHint="#E91E63"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usrEmail"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:text="User Email"
+                android:textColorHint="#E91E63"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/usrRole"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center"
+            android:text="User Role"
+            android:textColorHint="#E91E63"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/delBtn"
+            android:visibility="visible"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="@drawable/avatar_circle"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

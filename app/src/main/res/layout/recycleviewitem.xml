@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:contentPadding="15dp"
+    android:elevation="5dp"
+    android:id="@+id/recyclerParent"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/avatar_circle"
+            android:elevation="5dp"
+            android:scaleType="centerInside"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3.5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/empName"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:text="Employee Name"
+            android:textColorHint="#E91E63"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/empEmail"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Employee Email"
+            android:textColorHint="#E91E63"
+            />
+            </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:id="@+id/edtBtn"
+            android:visibility="gone"
+            android:background="@drawable/avatar_circle"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/delBtn"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="@drawable/avatar_circle"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
