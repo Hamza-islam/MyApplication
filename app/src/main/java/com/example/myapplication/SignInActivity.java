@@ -48,6 +48,7 @@ public class SignInActivity extends AppCompatActivity {
                         Toast.makeText(SignInActivity.this,dataBaseHandler.getUserDataById(Integer.parseInt(id)).getUserName()+" is restricted by Admin",Toast.LENGTH_SHORT).show();
                     }else if(userPriority!=2){
                     config.setStringValue(Config.USER_LOGIN, id);
+                    Toast.makeText(SignInActivity.this,dataBaseHandler.getUserDataById(Integer.parseInt(id)).getUserName()+" is login.",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignInActivity.this, MainActivity.class));
                     finish();
                     }
